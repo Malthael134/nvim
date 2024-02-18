@@ -1,9 +1,11 @@
+
+-- lazy.nvim config function
 local function init()
     require("catppuccin").setup({
         flavour = "mocha", -- latte, frappe, macchiato, mocha
         background = { -- :h background
-            light = "latte",
-            dark = "mocha",
+            light = "mocha", -- latte
+            dark = "mocha", -- mocha
         },
         transparent_background = false, -- disables setting the background color.
         show_end_of_buffer = false, -- shows the '~' characters after the end of buffers
@@ -50,12 +52,16 @@ local function init()
     vim.cmd.colorscheme "catppuccin"
 end
 
+
+-- lazy.nvim plugin config
 return {
     "catppuccin/nvim",
     name = "catppuccin",
     priority = 1000,
     config = init,
 }
+
+
 
 
 
