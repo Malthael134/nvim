@@ -23,7 +23,9 @@ require("nvim-tree").setup({
 })
 end
 
-return {
-    "nvim-tree/nvim-tree.lua",
-    config = init,
-}
+return {}
+
+-- return {
+--     "nvim-tree/nvim-tree.lua",
+--     config = init,
+-- }
